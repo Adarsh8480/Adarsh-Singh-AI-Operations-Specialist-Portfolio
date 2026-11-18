@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#102a43">
+<meta name="description" content="Adarsh Kumar Singh — AI Operations, data validation, business analysis and quality assurance portfolio.">
+<title>Adarsh Kumar Singh | AI Operations Portfolio | Bravebird-inspired</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1c3b32;--navy2:#244c3c;--teal:#b7e7b6;--mint:#e4f7d9;--ice:#f4f8ef;--ink:#18372e;--muted:#587066;--line:#d8e8d2;--white:#fffef5;--coral:#f5f5c6;--shadow:0 18px 50px rgba(20,55,40,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ice);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 42px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(211,244,207,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(220,231,236,.8)}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:Manrope,sans-serif;font-weight:800;letter-spacing:-.04em;color:var(--navy);font-size:18px}.brand span{color:#4d7957}.navlinks{display:flex;gap:27px;font-size:13px;font-weight:700;color:#536b60}.navlinks a:hover{color:var(--teal)}
+.hero{background:radial-gradient(circle at 88% 18%,rgba(154,207,146,.42),transparent 30%),linear-gradient(110deg,#639b6c 0%,#315b48 22%,#1b3932 55%,#254b3c 78%,#75a977 100%);color:white;padding:88px 0 82px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(238,255,230,.055) 0,rgba(238,255,230,.055) 1px,transparent 1px,transparent 18px);pointer-events:none}.hero:after{content:"";position:absolute;width:430px;height:430px;border:1px solid rgba(255,255,255,.1);border-radius:50%;right:-120px;bottom:-260px;box-shadow:0 0 0 45px rgba(255,255,255,.025),0 0 0 90px rgba(255,255,255,.02)}
+.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:55px;align-items:center;position:relative;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#d4f3c9;text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:700}.dot{width:7px;height:7px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 5px rgba(32,184,166,.15)}
+h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.15;letter-spacing:-.04em}h1{font-size:clamp(42px,6vw,68px);margin:22px 0 17px;font-weight:800;max-width:720px}h1 em{font-style:normal;color:#d5f3c9}.hero p{font-size:17px;line-height:1.8;color:#d5e4eb;max-width:650px;margin:0}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:12px 19px;border-radius:8px;font-weight:700;font-size:13px;display:inline-flex;align-items:center;gap:9px;transition:.2s}.btn-primary{background:#f5f5c6;color:#142d25;border-radius:999px}.btn-primary:hover{transform:translateY(-2px);background:#e8edac}.btn-outline{border:1px solid rgba(255,255,255,.35);color:white}.btn-outline:hover{background:rgba(255,255,255,.1)}
+.hero-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:18px;padding:25px;backdrop-filter:blur(10px);box-shadow:0 20px 60px rgba(0,0,0,.12)}.hero-card .mini-label{font-size:10px;text-transform:uppercase;letter-spacing:.15em;color:#d4f3c9;font-weight:700}.hero-card h3{font-size:23px;margin:12px 0;color:white}.hero-card p{font-size:13px;color:#c5d9e2;line-height:1.7}.stat{display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(255,255,255,.15);padding-top:13px;margin-top:13px;font-size:12px;color:#d5e4eb}.stat b{color:#8de6d9}
+section{padding:82px 0}.section-kicker{font-size:11px;color:#0d9c91;text-transform:uppercase;letter-spacing:.16em;font-weight:800;margin-bottom:12px}.section-title{font-size:clamp(30px,4vw,43px);color:var(--navy);margin:0 0 15px}.section-intro{color:var(--muted);max-width:720px;margin:0 0 34px}.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:start}.about-copy p{color:#536b60;margin:0 0 16px}.principles{display:grid;gap:12px}.principle{background:white;border:1px solid var(--line);border-radius:12px;padding:17px 18px;display:flex;gap:13px;align-items:flex-start}.icon{width:34px;height:34px;border-radius:9px;background:#d2f2ca;color:#244c3c;display:grid;place-items:center;font-weight:800;flex:0 0 auto}.principle b{display:block;color:var(--navy);font-size:14px}.principle span{font-size:12px;color:var(--muted)}
+.skills{background:#fff}.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.skill-card{border:1px solid var(--line);border-radius:14px;padding:21px;background:#fff;transition:.2s}.skill-card:hover,.project:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.skill-card h3{font-size:17px;color:var(--navy);margin:0 0 14px}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{background:#edf6e8;color:#315b43;border:1px solid #d9e9d1;border-radius:30px;padding:6px 10px;font-size:11px;font-weight:600}.skill-note{font-size:11px;color:#738797;margin-top:14px}
+.timeline{display:grid;gap:18px;max-width:850px}.role{display:grid;grid-template-columns:170px 1fr;gap:25px;padding:24px;background:white;border:1px solid var(--line);border-radius:14px}.date{font-size:12px;color:#0d9c91;font-weight:800}.company{font-size:12px;color:var(--muted);margin-top:6px}.role h3{margin:0 0 5px;color:var(--navy);font-size:19px}.role ul{margin:13px 0 0;padding-left:18px;color:#536b60;font-size:13px}.role li{margin:6px 0}
+.projects{background:#fff}.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.project{border:1px solid var(--line);border-radius:16px;padding:25px;background:linear-gradient(145deg,#fff,#f8fbfc);transition:.2s}.project-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}.project-symbol{width:44px;height:44px;border-radius:12px;background:#d2f2ca;display:grid;place-items:center;color:#244c3c;font-size:20px;font-weight:800}.project-type{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#0d9c91;font-weight:800}.project h3{font-size:22px;color:var(--navy);margin:0 0 10px}.project p{color:var(--muted);font-size:13px;margin:0 0 17px}.project .tags .tag{background:#eff6e9}
+.approach-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{padding:20px 16px;border-radius:13px;background:#244b3c;color:#fffef5;min-height:155px}.step small{color:#d5f3c9;font-weight:800;letter-spacing:.12em}.step h3{font-size:17px;margin:14px 0 8px}.step p{font-size:11px;color:#c6d8e0;margin:0;line-height:1.6}
+.education-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:16px}.edu{background:#fff;border:1px solid var(--line);border-radius:13px;padding:20px}.edu h3{font-size:17px;color:var(--navy);margin:0 0 6px}.edu p{font-size:12px;color:var(--muted);margin:0}.edu .year{font-size:11px;color:#0d9c91;font-weight:800;margin-top:10px}.certs{background:#fff;border:1px solid var(--line);border-radius:13px;padding:20px}.certs h3{font-size:17px;color:var(--navy);margin:0 0 12px}.certs ul{padding-left:17px;margin:0;color:var(--muted);font-size:12px}.certs li{margin:8px 0}
+.contact{background-color:#e9f5d8;background-image:radial-gradient(circle at 0 50%,#d7ebc8 0 72px,transparent 73px),radial-gradient(circle at 100% 50%,#d7ebc8 0 72px,transparent 73px);background-size:220px 220px;background-position:0 0,110px 110px;color:#1d3b30;padding:72px 0;border-top:1px solid #d0e6c6}.contact .section-kicker{color:#315f43}.contact .section-title{color:#1d3b30}.contact p{color:#365a48;max-width:620px}.contact-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.contact-link{padding:11px 15px;border:1px solid rgba(39,83,57,.35);border-radius:8px;font-size:12px;color:#244b37;background:rgba(255,255,255,.35)}.contact-link:hover{border-color:#315f43;color:#102c20;background:#d5eccb}footer{padding:22px 0;background:#d3f2cd;color:#315843;font-size:11px;border-top:1px solid #c5e7bf}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:800px){.hero-grid,.about-grid,.education-grid{grid-template-columns:1fr}.hero-card{max-width:480px}.skill-grid{grid-template-columns:1fr 1fr}.approach-grid{grid-template-columns:1fr 1fr}.navlinks{gap:13px}.navlinks a:nth-child(2),.navlinks a:nth-child(4){display:none}}
+@media(max-width:560px){.wrap{width:min(100% - 30px,1120px)}nav{height:62px}.navlinks{font-size:11px;gap:10px}.hero{padding:65px 0}.hero-grid{gap:35px}h1{font-size:43px}.hero p{font-size:15px}section{padding:62px 0}.skill-grid,.project-grid,.approach-grid{grid-template-columns:1fr}.role{grid-template-columns:1fr;gap:8px}.role ul{font-size:12px}.footer-row{display:block}.footer-row span{display:block;margin:5px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="brand" href="#top">Adarsh Singh<span>.</span></a>
+<div class="navlinks"><a href="#about">About</a><a href="#skills">Core Skills</a><a href="#projects">Projects</a></div>
+</nav></div></header>
+<main id="top">
+<section class="hero"><div class="wrap hero-grid">
+<div>
+<div class="eyebrow"><span class="dot"></span> AI Operations · Data Quality · Process Improvement</div>
+<h1>Making complex workflows <em>clearer & more reliable.</em></h1>
+<p>I’m Adarsh Kumar Singh, a Computer Science graduate with experience in business analysis, information verification, documentation, and operational coordination. I’m interested in helping AI-powered workflows deliver accurate, complete, and dependable results.</p>
+<div class="actions"><a class="btn btn-primary" href="#contact">Let’s connect <span>↗</span></a><a class="btn btn-outline" href="#experience">Explore my experience ↗</a></div>
+</div>
+<aside class="hero-card">
+<div class="mini-label">Professional focus</div><h3>Human judgment.<br>Operational precision.</h3>
+<p>Bringing a careful, structured approach to reviewing information, finding gaps, documenting issues, and supporting better workflows.</p>
+<div class="stat"><span>Based in</span><b>Gurgaon, India</b></div>
+<div class="stat"><span>Education</span><b>B.Tech · Computer Science</b></div>
+<div class="stat"><span>Focus</span><b>AI-driven operations</b></div>
+</aside>
+</div></section>
+
+<section id="about"><div class="wrap">
+<div class="section-kicker">01 / About</div><h2 class="section-title">A detail-oriented operator with a technical foundation.</h2>
+<div class="about-grid"><div class="about-copy">
+<p>My experience spans business analysis and recruitment operations, where I worked with structured information, reviewed records for completeness, identified discrepancies, maintained trackers, and coordinated follow-ups.</p>
+<p>With a Computer Science background and project experience in software testing, I bring both analytical thinking and a practical understanding of how digital workflows behave. I’m motivated by work where accuracy, clear communication, and continuous improvement matter.</p>
+<p>I’m particularly interested in AI operations: validating generated outputs, recognizing recurring issues, documenting edge cases, and helping teams improve system reliability.</p>
+</div><div class="principles">
+<div class="principle"><div class="icon">✓</div><div><b>Accuracy first</b><span>Check information for completeness, consistency, and correctness.</span></div></div>
+<div class="principle"><div class="icon">⌕</div><div><b>Investigate the gap</b><span>Identify missing details and discrepancies; coordinate to resolve them.</span></div></div>
+<div class="principle"><div class="icon">↗</div><div><b>Improve the workflow</b><span>Track issues, document learnings, and support process improvements.</span></div></div>
+</div></div></div></section>
+
+<section class="skills" id="skills"><div class="wrap">
+<div class="section-kicker">02 / Capabilities</div><h2 class="section-title">Skills for reliable operations.</h2><p class="section-intro">A practical mix of data quality, coordination, documentation, technical familiarity, and communication.</p>
+<div class="skill-grid">
+<div class="skill-card"><h3>Data validation & quality</h3><div class="tags"><span class="tag">Data validation</span><span class="tag">Information verification</span><span class="tag">Error identification</span><span class="tag">Data accuracy</span><span class="tag">Quality checks</span><span class="tag">SQL</span><span class="tag">MySQL</span></div></div>
+<div class="skill-card"><h3>Operations & workflows</h3><div class="tags"><span class="tag">Process coordination</span><span class="tag">Workflow management</span><span class="tag">Information tracking</span><span class="tag">Issue resolution</span><span class="tag">Stakeholder coordination</span></div></div>
+<div class="skill-card"><h3>AI & technology</h3><div class="tags"><span class="tag">AI tools familiarity</span><span class="tag">AI output review</span><span class="tag">Prompt understanding</span><span class="tag">Technical troubleshooting</span></div><div class="skill-note">Familiarity and interest; not presented as prior professional AI-operations experience.</div></div>
+<div class="skill-card"><h3>Documentation & reporting</h3><div class="tags"><span class="tag">Business documentation</span><span class="tag">Report preparation</span><span class="tag">Record management</span><span class="tag">Issue tracking</span></div></div>
+<div class="skill-card"><h3>Productivity tools</h3><div class="tags"><span class="tag">MS Excel</span><span class="tag">MS Word</span><span class="tag">PowerPoint</span><span class="tag">Outlook</span><span class="tag">Google Workspace</span></div></div>
+<div class="skill-card"><h3>Professional strengths</h3><div class="tags"><span class="tag">Attention to detail</span><span class="tag">Analytical thinking</span><span class="tag">Communication</span><span class="tag">Problem solving</span><span class="tag">Team collaboration</span><span class="tag">Adaptability</span></div></div>
+</div></div></section>
+
+<section id="experience"><div class="wrap">
+<div class="section-kicker">03 / Experience</div><h2 class="section-title">Experience built around information and execution.</h2>
+<div class="timeline">
+<article class="role"><div><div class="date">AUG 2026 — OCT 2026</div><div class="company">Zodiac Solutions · Gurgaon</div></div><div><h3>Trainee US IT Recruiter</h3><ul><li>Reviewed and verified candidate information to ensure data accuracy, completeness, and consistency.</li><li>Analyzed job requirements and organized information into structured search criteria for profile evaluation.</li><li>Identified missing information and discrepancies during screening and coordinated follow-ups for resolution.</li><li>Maintained records, documentation, and submission trackers while coordinating with candidates and internal teams.</li></ul></div></article>
+<article class="role"><div><div class="date">OCT 2025 — JAN 2026</div><div class="company">Infera · Noida</div></div><div><h3>Business Analyst Trainee</h3><ul><li>Gathered and documented business requirements through stakeholder coordination.</li><li>Reviewed and validated project information, identified gaps, and maintained accurate records and reports.</li><li>Coordinated with teams, tracked project progress, and supported issue resolution and process improvements.</li></ul></div></article>
+</div></div></section>
+
+<section class="projects" id="projects"><div class="wrap">
+<div class="section-kicker">04 / Selected projects</div><h2 class="section-title">Technical projects with a quality mindset.</h2><p class="section-intro">Project work that strengthened my understanding of application workflows, testing, issue identification, and documentation.</p>
+<div class="project-grid">
+<article class="project"><div class="project-top"><div class="project-symbol">B</div><div class="project-type">Application workflow · QA</div></div><h3>BloodLink</h3><p>A blood donation and inventory management application. Supported application testing, project documentation, and issue tracking. Reviewed workflows, validated information accuracy, and identified functional issues to support process improvements.</p><div class="tags"><span class="tag">Workflow review</span><span class="tag">Data accuracy</span><span class="tag">Issue tracking</span><span class="tag">Documentation</span></div></article>
+<article class="project"><div class="project-top"><div class="project-symbol">✓</div><div class="project-type">Software testing · QA</div></div><h3>Face Attendance System with Anti-Spoofing</h3><p>Conducted software testing to validate system functionality, identify errors, and track issues. Maintained documentation and prepared reports to support quality assurance.</p><div class="tags"><span class="tag">Functional testing</span><span class="tag">Error identification</span><span class="tag">Quality assurance</span><span class="tag">Reporting</span></div></article>
+</div></div></section>
+
+<section><div class="wrap">
+<div class="section-kicker">05 / Working approach</div><h2 class="section-title">A simple, structured way to handle exceptions.</h2><p class="section-intro">The approach I would bring to AI-assisted operations and verification workflows.</p>
+<div class="approach-grid">
+<div class="step"><small>STEP 01</small><h3>Review</h3><p>Read the available result and understand the required fields and expected outcome.</p></div>
+<div class="step"><small>STEP 02</small><h3>Validate</h3><p>Check for missing, inconsistent, or potentially inaccurate information.</p></div>
+<div class="step"><small>STEP 03</small><h3>Resolve & record</h3><p>Follow the defined process, clarify gaps, and document the outcome clearly.</p></div>
+<div class="step"><small>STEP 04</small><h3>Learn & improve</h3><p>Track recurring issues and share clear observations to help improve workflows.</p></div>
+</div></div></section>
+
+<section><div class="wrap">
+<div class="section-kicker">06 / Education & certifications</div><h2 class="section-title">Learning foundation.</h2>
+<div class="education-grid">
+<div class="edu"><h3>Bachelor of Technology — Computer Science & Engineering</h3><p>United College of Engineering and Research, Prayagraj</p><div class="year">OCT 2021 — JUL 2025</div><p style="margin-top:15px"><b>Intermediate (PCM):</b> 83% · Shakun Vidya Niketan, Prayagraj</p><p><b>High School:</b> 87% · Shakun Vidya Niketan, Prayagraj</p></div>
+<div class="certs"><h3>Certifications</h3><ul><li>Web Development Internship — Prodigy InfoTech</li><li>Android Application Development (Core Java) — NETCAMP</li><li>Network Management & Web Development — NETCAMP</li></ul></div>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<div class="section-kicker">07 / Contact</div><h2 class="section-title">Let’s make information more reliable.</h2>
+<p>I’m interested in opportunities where analytical thinking, careful validation, clear documentation, and continuous workflow improvement create meaningful operational impact.</p>
+<div class="contact-row"><a class="btn btn-primary" href="mailto:adarshkumarsingh8480@gmail.com">Email me ↗</a><a class="contact-link" href="tel:+919794048480">+91 97940 48480</a><a class="contact-link" href="https://www.linkedin.com/in/adarsh-kumar-singh-92b392224/" target="_blank" rel="noopener">LinkedIn ↗</a></div>
+</div></section>
+</main>
+<footer><div class="wrap footer-row"><span>© 2026 Adarsh Kumar Singh</span><span>Designed for an AI Operations portfolio · Gurgaon, India</span></div></footer>
+</body></html>
